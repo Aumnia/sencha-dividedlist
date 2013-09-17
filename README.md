@@ -1,4 +1,6 @@
 sencha-dividedlist
 ==================
 
-Sencha Touch list grouper for page and item list dividers.
+Code that accompanies blog post http://www.aumnia.com/blog/mobile-design/sencha-touch-list-with-page-numbered-dividers/
+
+
