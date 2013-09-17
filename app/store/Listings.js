@@ -15,18 +15,18 @@ Ext.define('App.store.Listings', {
 		remoteFilter: true,
 		remoteGroup: false,
 		pageSize: 15,
-        clearOnPageLoad: false,
+        	clearOnPageLoad: false,
         
 		grouper: {
 			groupFn: function (record) {
 				var store = record.stores[0],
-                pageSize = store.getPageSize(),
-                cachedCount = store.getAllCount(),
+                		pageSize = store.getPageSize(),
+                		cachedCount = store.getAllCount(),
 				totalCount = store.getTotalCount(),
-                index = store.indexOf(record) + 1,
-                totalPages = Math.ceil(cachedCount / pageSize),
-                pageIndex = 0,
-                lower, upper;
+                		index = store.indexOf(record) + 1,
+                		totalPages = Math.ceil(cachedCount / pageSize),
+                		pageIndex = 0,
+                		lower, upper;
 
 				for (pageIndex = 0; pageIndex <= totalPages; pageIndex++) {
 					lower = (pageIndex * pageSize) + 1;
